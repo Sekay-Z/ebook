@@ -11,7 +11,7 @@ import com.aliyuncs.profile.DefaultProfile;
 
 public class SmsUtil {
     public static String sendSMS(String phone) throws ClientException {
-        DefaultProfile profile = DefaultProfile.getProfile("default", "LTAIfneAJ9ALCd8y", "C0nDIt60sB6zL5cdLuzJ2uvNpiZI0q");
+        DefaultProfile profile = DefaultProfile.getProfile("default", "", "");
         IAcsClient client = new DefaultAcsClient(profile);
 
         String code = KeyUtil.generate(6);
